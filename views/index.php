@@ -4,6 +4,6 @@
 <title>randers</title>
 </head>
 <body>
-<p><?php echo ; ?></p>
+<p><?php echo $rand; ?></p>
 </body>
 </html>
