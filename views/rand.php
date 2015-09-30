@@ -4,15 +4,13 @@
 $randNums = array();
 //ランダムのやつ
 for ($i = 0; $i < 10000; $i++) {
-    $rand = "";
+    $rand = "0";
     while (true) {
         if ($rand > 1281) {
             $rand -= 1281;
             break;
-        } elseif ($rand < 1282) {
-            $rand += rand(1,43);
         } else {
-            $rand = rand(1,43);
+            $rand += mt_rand(1,43);
         }
     }
     $randNums[] = $rand;
